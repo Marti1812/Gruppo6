@@ -1,0 +1,76 @@
+/* Stili di base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Imposta altezza minima al 100% della viewport */
+  }
+  
+  /* Intestazione */
+  header {
+    background-color: #2a3d66;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  /* Sezione principale del contenuto */
+  .content {
+    flex: 1; /* Fa sì che questa sezione prenda tutto lo spazio disponibile */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2a3d66;
+    color: white;
+    display: flex; /* Impostiamo il footer come flex container */
+    justify-content: center; /* Centra il testo orizzontalmente */
+    align-items: center; /* Centra il testo verticalmente */
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Per evitare che il footer si sovrapponga al contenuto quando la pagina è lunga */
+  .content + footer {
+    position: relative;
+  }
+  
+  /* Responsività */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    .content {
+      padding: 15px;
+    }
+  }
+  
